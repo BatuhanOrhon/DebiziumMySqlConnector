@@ -9,7 +9,7 @@ services:
       - "3888:3888"
 
   kafka:
-    image: debezium/kafka:1.0
+    image: debezium/kafka:latest
     ports:
       - "9092:9092"
     environment:
@@ -29,7 +29,7 @@ services:
       MYSQL_DATABASE: testdb
 
   connect:
-    image: debezium/connect:1.0
+    image: debezium/connect:latest
     ports:
       - "8083:8083"
     environment:
